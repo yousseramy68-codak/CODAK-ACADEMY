@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        < COD/AK>
+    </title>
+    <meta name="description"
+        content="The official portfolio of Youssef Ramy (CODAK), an Advanced Front-End Developer specializing in professional, high-performance websites. Services include corporate websites, e-commerce, and personal portfolios. | معرض أعمال يوسف رامي (كوداك)، مطور واجهات محترف متخصص في تصميم وتطوير مواقع ويب حديثة للشركات والأفراد.">
+    <meta name="keywords"
+        content="Youssef Ramy, Youssef, CODAK, Front-End Developer, Web Developer, Web Design, Portfolio, HTML, CSS, JavaScript, Freelancer Egypt, يوسف رامي, يوسف, كوداك, مطور ويب, تصميم مواقع, برمجة, معرض أعمال, مواقع شركات">
+    <meta name="author" content="Youssef Ramy (CODAK)">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yousseframy.com/">
+    <meta property="og:title" content="Youssef Ramy (CODAK) | Advanced Front-End Developer">
+    <meta property="og:description"
+        content="Professional web development services by Youssef Ramy. Building modern, responsive websites for businesses and individuals.">
+    <meta property="og:image" content="logo_codak.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Youssef Ramy (CODAK) | Advanced Front-End Developer">
+    <meta property="twitter:description"
+        content="Professional web development services by Youssef Ramy. Building modern, responsive websites for businesses and individuals.">
+    <meta property="twitter:image" content="logo_codak.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700&family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="codak_web_.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="canvas.css">
+    <link rel="stylesheet" href="components.css">
+</head>
+
+<body>
+    <!-- Background Animation Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container nav flex-between">
+            <a href="#" class="logo">CODAK</a>
+
+            <!-- Mobile Menu Button -->
+            <button class="menu-btn" id="menu-btn" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#about" class="nav-link" data-key="nav_about">About</a></li>
+                    <li><a href="#skills" class="nav-link" data-key="nav_skills">Skills</a></li>
+                    <li><a href="#projects" class="nav-link" data-key="nav_projects">Projects</a></li>
+                    <li><a href="#experience" class="nav-link" data-key="nav_experience">Experience</a></li>
+                    <li><a href="#services" class="nav-link" data-key="nav_services">Services</a></li>
+                    <li><a href="#contact" class="nav-link" data-key="nav_contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="controls flex-center" style="gap: 0.5rem;">
+                <!-- Language Toggle -->
+                <button class="lang-toggle btn-outline" id="lang-toggle"
+                    style="padding: 0.4rem 0.8rem; font-size: 0.9rem; border-radius: 50px;">
+                    عربي
+                </button>
+
+                <!-- Theme Toggle -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Switch Theme">
+                    <!-- Icon injected by JS -->
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-container flex-between wrap-reverse">
+            <div class="hero-content">
+                <span class="hero-label fade-in-up" data-key="hero_label">Available for Work</span>
+                <h1 class="fade-in-up stagger-1">
+                    <span data-key="hero_greeting">Hi, I'm</span> <span class="text-gradient"
+                        data-key="hero_name">Youssef Ramy</span>.<br>
+                    <span data-key="hero_title">Advanced Front-End Developer.</span>
+                </h1>
+                <p class="hero-intro fade-in-up stagger-2" data-key="hero_intro">
+                    I build modern, high-performance websites with a strong focus on UI/UX, clean code, and real-world
+                    business needs.
+                </p>
+                <div class="hero-buttons fade-in-up stagger-3">
+                    <a href="#projects" class="btn btn-primary" data-key="hero_btn_projects">View Projects</a>
+                    <a href="#contact" class="btn btn-outline" data-key="hero_btn_contact">Contact Me</a>
+                </div>
+            </div>
+
+            <!-- Avatar Section -->
+            <div class="hero-avatar fade-in-up">
+                <img src="logo_codak.png" alt="CODAK Logo">
+                <div class="avatar-glow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section-padding about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text fade-in-up">
+                    <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+                        <h2 class="text-gradient" data-key="about_heading" style="margin-bottom: 0;">About Me</h2>
+
+                    </div>
+                    <div class="about-card">
+                        <p data-key="about_p1">
+                            I am an advanced Front-End Developer specialized in building professional, responsive
+                            websites using modern web technologies.
+                        </p>
+                        <p data-key="about_p2">
+                            My approach combines clean, maintainable code with intuitive UI/UX design to create fast,
+                            scalable, and user-friendly digital experiences.
+                        </p>
+                        <p style="margin-bottom:0;" data-key="about_p3">
+                            I work on real client projects, translating business requirements into reliable and visually
+                            polished web solutions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section-padding" id="skills">
+        <div class="container">
+            <h2 class="text-gradient fade-in-up" style="margin-bottom: 3rem; text-align: center;"
+                data-key="skills_heading">Skills & Technologies</h2>
+
+            <div class="skills-grid">
+                <!-- Languages & Core Technologies -->
+                <div class="skill-category spotlight-card fade-in-up stagger-1">
+                    <h3 data-key="skills_cat_1">Languages & Core Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- Web Solutions -->
+                <div class="skill-category spotlight-card fade-in-up stagger-2">
+                    <h3 data-key="skills_cat_2">Web Solutions</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-key="skill_portfolios">Personal Portfolios</span>
+                        <span class="skill-tag" data-key="skill_corporate">Corporate Websites</span>
+                    </div>
+                </div>
+
+                <!-- Design & Code Quality -->
+                <div class="skill-category spotlight-card fade-in-up stagger-3">
+                    <h3 data-key="skills_cat_3">Design & Code Quality</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-key="skill_uiux">UI / UX Design</span>
+                        <span class="skill-tag" data-key="skill_clean_code">Clean & Maintainable Code</span>
+                        <span class="skill-tag" data-key="skill_responsive">Responsive Web Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section-padding projects" id="projects">
+        <div class="container">
+            <h2 class="text-gradient fade-in-up" style="margin-bottom: 3rem;" data-key="projects_heading">Featured
+                Projects</h2>
+
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+                <!-- Project: Bag-Store -->
+                <article class="project-card spotlight-card fade-in-up">
+                    <div
+                        style="height: 200px; background: linear-gradient(135deg, #1e293b, #0f172a); display: flex; align-items: center; justify-content: center;">
+                        <span style="font-size: 3rem;">🛍️</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span data-key="project_tag_ecommerce">E-Commerce</span> • <span
+                                data-key="project_tag_responsive">Responsive</span>
+                        </div>
+                        <h3 class="project-title">Bag-Store</h3>
+                        <p data-key="project_bag_desc">
+                            A professional e-commerce website for selling bags and backpacks, built for real clients.
+                            The project focuses on responsive design, clean architecture, and a smooth user experience
+                            to increase usability and conversions.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <!-- Project: Chance -->
+                <article class="project-card spotlight-card fade-in-up">
+                    <div
+                        style="height: 200px; background: linear-gradient(135deg, #1e293b, #0f172a); display: flex; align-items: center; justify-content: center;">
+                        <span style="font-size: 3rem;"><img src="company_chance.jpeg" alt="logo company"
+                                width="150px" style=" border-radius: 20px;"></span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span data-key="project_tag_corporate">Corporate</span> • <span
+                                data-key="project_tag_tourism">Tourism</span>
+                        </div>
+                        <h3 class="project-title">Chance</h3>
+                        <p data-key="project_chance_desc">
+                            A premium, single-page corporate website designed for Chance, a global tourism and
+                            conference organizing company. Features a clean, modern UI with dark/light modes, smooth
+                            animations, and direct WhatsApp integration.
+                        </p>
+
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section-padding" id="experience">
+        <div class="container">
+            <h2 class="text-gradient fade-in-up" style="margin-bottom: 3rem; text-align: center;"
+                data-key="experience_heading">Experience</h2>
+
+            <div class="timeline fade-in-up">
+                <div class="timeline-item">
+                    <span class="timeline-date" data-key="exp_date">Present</span>
+                    <h3 data-key="exp_title">Front-End Developer — Freelance</h3>
+                    <ul class="timeline-d-list">
+                        <li data-key="exp_desc_1">Developed responsive websites for real clients across different
+                            devices</li>
+                        <li data-key="exp_desc_2">Converted UI/UX designs into clean, scalable front-end code</li>
+                        <li data-key="exp_desc_3">Improved performance, accessibility, and overall user experience</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section-padding services" id="services">
+        <div class="container">
+            <h2 class="text-gradient fade-in-up" style="margin-bottom: 3rem; text-align: center;"
+                data-key="services_heading">Services</h2>
+
+            <div class="services-grid">
+                <div class="service-card spotlight-card fade-in-up stagger-1">
+                    <div class="service-icon">💻</div>
+                    <h3 data-key="service_1_title">Front-End Website Development</h3>
+                    <p data-key="service_1_desc">Building specialized, high-performance websites tailored to client
+                        needs.</p>
+                </div>
+                <div class="service-card spotlight-card fade-in-up stagger-2">
+                    <div class="service-icon">🎨</div>
+                    <h3 data-key="service_2_title">UI / UX Implementation</h3>
+                    <p data-key="service_2_desc">Turning strict design requirements into pixel-perfect code.</p>
+                </div>
+                <div class="service-card spotlight-card fade-in-up stagger-3">
+                    <div class="service-icon">📱</div>
+                    <h3 data-key="service_3_title">Responsive Design & Optimization</h3>
+                    <p data-key="service_3_desc">Ensuring your site works perfectly on every device, with top-tier
+                        performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Career Objective Section -->
+    <section class="section-padding" id="career">
+        <div class="container">
+            <div class="career-objective fade-in-up">
+                <h2 class="text-gradient" style="font-size: 2rem;" data-key="career_heading">Career Objective</h2>
+                <p style="font-size: 1.1rem; max-width: 600px; margin: 1.5rem auto;" data-key="career_desc">
+                    To continue growing as a front-end specialist by building high-quality, visually refined websites
+                    that deliver excellent user experiences and real business value.
+                    <!-- Contact Section -->
+                <section class="section-padding contact-section" id="contact">
+                    <div class="container fade-in-up">
+                        <h2 class="text-gradient" data-key="contact_heading">Get In Touch</h2>
+                        <p data-key="contact_sub">Ready to start your next project?</p>
+
+                        <div class="contact-wrapper">
+                            <!-- WhatsApp Card (Only) -->
+                            <a href="https://wa.me/201101564737" target="_blank" class="contact-card-integrated">
+                                <div class="contact-icon-small">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M17.472 14.382C17.153 14.202 15.486 13.386 15.186 13.264C14.868 13.142 14.654 13.083 14.42 13.44C14.208 13.799 13.593 14.516 13.4 14.736C13.208 14.956 13.038 14.975 12.72 14.816C12.401 14.657 11.374 14.321 10.156 13.235C9.21798 12.399 8.58498 11.368 8.37198 10.999C8.16998 10.64 8.35098 10.435 8.50998 10.276C8.65398 10.133 8.82398 9.904 8.99298 9.704C9.16298 9.504 9.21698 9.355 9.33398 9.117C9.45098 8.878 9.38698 8.667 9.29198 8.477C9.20698 8.287 8.52798 6.612 8.23998 5.91899C7.96198 5.24299 7.67498 5.33799 7.46198 5.34699C7.26198 5.356 7.02798 5.356 6.79398 5.356C6.56098 5.356 6.17798 5.443 5.86998 5.78C5.56198 6.117 4.67998 6.946 4.67998 8.636C4.67998 10.326 5.91098 11.961 6.09098 12.191C6.27098 12.43 8.41198 16.002 11.887 17.345C14.887 18.504 15.483 18.253 16.142 18.192C16.899 18.122 18.259 17.399 18.536 16.621C18.824 15.843 18.824 15.174 18.739 15.031C18.664 14.899 18.452 14.804 18.134 14.646"
+                                            fill="currentColor" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12.009 0C5.395 0 0.012 5.38 0.012 11.992C0.012 14.113 0.559 16.104 1.543 17.844L0 23.504L5.794 21.984C7.625 22.981 9.771 23.535 12.009 23.535C18.623 23.535 24 18.155 24 11.532C24 4.908 18.623 0 12.009 0ZM12.009 21.52C9.976 21.52 8.094 20.978 6.467 20.009L6.088 19.784L2.857 20.632L3.719 17.485L3.473 17.093C2.41 15.405 1.765 13.56 1.765 11.522C1.765 6.007 6.366 1.522 12.021 1.522C17.676 1.522 22.277 6.007 22.277 11.522C22.277 17.037 17.676 21.52 12.009 21.52Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </div>
+                                <span data-key="contact_whatsapp_label">Chat on WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Scroll Progress / Back-to-Top Button -->
+                <button class="scroll-progress-btn" id="scroll-progress-btn" aria-label="Back to top">
+                    <span class="scroll-progress-inner">↑</span>
+                </button>
+
+                <!-- Footer -->
+                <footer>
+                    <div class="container">
+                        <p data-key="footer_rights">&copy; 2025 يوسف رامي. جميع الحقوق محفوظة.</p>
+                    </div>
+                </footer>
+
+                <!-- JavaScript -->
+                <script src="script.js"></script>
+</body>
+
+</html>
